@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Coffee</title>
-    <link rel="icon" type="img/png">
+
+    <title>CoffeeVoke</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/11456/11456644.png" type="image/png">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -14,6 +14,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="style.css">
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,16 +44,16 @@
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-white"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mb-2 mb-lg-0 me-5">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mb-2 mb-lg-0 overflow-hidden">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#shop">Shop</a>
+                        <a class="nav-link" href="#shop">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#contact">About Us</a>
+                        <a class="nav-link" href="#contact">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -65,24 +66,21 @@
     </nav>
 
     <section class="section1" id="home">
-        <section
-            class="inner-section1 w-100 justify-content-center align-items-center flex-column flex-md-row text-white row">
+        <section class="inner-section1 w-100 text-white">
             <div class="col-6 d-flex justify-content-center">
-                <div class="container">
-                    <div class="d-flex justify-content-center">
-                        <img src="https://img.freepik.com/premium-photo/professional-barista-making-coffee_868783-13459.jpg"
-                            class="p-2" style="object-fit: cover;width: 300px;border-radius: 30px;" alt="">
-                        <div class="d-flex flex-column">
-                            <div class="col">
-                                <img src="https://img.freepik.com/premium-photo/professional-barista-making-coffee_868783-13469.jpg"
-                                    class="p-2"
-                                    style="object-fit: cover;height: 250px;width: 290px;border-radius: 30px;" alt="">
-                            </div>
-                            <div class="col">
-                                <img src="https://img.freepik.com/free-photo/close-up-hand-preparing-coffee_23-2148892822.jpg?t=st=1720518666~exp=1720522266~hmac=40ad623c45b96ab6d61729575f9216ceebc62e5c16bd19a4e30e09a6b4f363f4&w=360"
-                                    class="p-2"
-                                    style="object-fit: cover;height: 250px;width: 290px;border-radius: 30px;" alt="">
-                            </div>
+                <div class="d-flex justify-content-center">
+                    <img src="https://img.freepik.com/premium-photo/professional-barista-making-coffee_868783-13459.jpg"
+                        class="p-2" style="object-fit: cover;width: 300px;border-radius: 30px;" alt="">
+                    <div class="d-flex flex-column">
+                        <div class="col">
+                            <img src="https://img.freepik.com/premium-photo/professional-barista-making-coffee_868783-13469.jpg"
+                                class="p-2" style="object-fit: cover;height: 250px;width: 290px;border-radius: 30px;"
+                                alt="">
+                        </div>
+                        <div class="col">
+                            <img src="https://img.freepik.com/free-photo/close-up-hand-preparing-coffee_23-2148892822.jpg?t=st=1720518666~exp=1720522266~hmac=40ad623c45b96ab6d61729575f9216ceebc62e5c16bd19a4e30e09a6b4f363f4&w=360"
+                                class="p-2" style="object-fit: cover;height: 250px;width: 290px;border-radius: 30px;"
+                                alt="">
                         </div>
                     </div>
                 </div>
@@ -115,6 +113,7 @@
                             <div class="card-body text-white p-2">
                                 <h5 class="card-title">Caramel</h5>
                                 <p class="card-text">Rate: $3.7</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                     </div>
@@ -125,6 +124,7 @@
                             <div class="card-body text-white p-2">
                                 <h5 class="card-title">Espresso</h5>
                                 <p class="card-text">Rate: $3.7</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                     </div>
@@ -135,6 +135,7 @@
                             <div class="card-body text-white p-2">
                                 <h5 class="card-title">Latte</h5>
                                 <p class="card-text">Rate: $3.7</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                     </div>
@@ -145,6 +146,7 @@
                             <div class="card-body text-white p-2">
                                 <h5 class="card-title">Cappuccino</h5>
                                 <p class="card-text">Rate: $3.7</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                     </div>
@@ -155,6 +157,7 @@
                             <div class="card-body text-white p-2">
                                 <h5 class="card-title">Flat White</h5>
                                 <p class="card-text">Rate: $3.7</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                     </div>
@@ -165,6 +168,7 @@
                             <div class="card-body text-white p-2">
                                 <h5 class="card-title">Cold Brew</h5>
                                 <p class="card-text">Rate: $3.7</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                     </div>
@@ -175,6 +179,7 @@
                             <div class="card-body text-white p-2">
                                 <h5 class="card-title">Turkish</h5>
                                 <p class="card-text">Rate: $3.7</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                     </div>
@@ -185,6 +190,7 @@
                             <div class="card-body text-white p-2">
                                 <h5 class="card-title">Vietnamese Iced</h5>
                                 <p class="card-text">Rate: $3.7</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                     </div>
@@ -199,7 +205,53 @@
                 <h1 class="mb-4">
                     About Us
                 </h1>
+                <!--
                 <img src="/assets/coutries-aboutUs.jpg" alt="">
+                -->
+                <div class="gallery-bg p-0 my-5 d-flex justify-content-center">
+                    <div class="row gallery-width">
+                        <div class="col p-0">
+                            <img src="https://www.hdwallpapers.in/download/taj_mahal_agra_india_4k-1440x2560.jpg"
+                                class="img-fluid img-gallery" alt="Image 1"
+                                style="border-top-left-radius: 2rem; border-bottom-left-radius: 2rem; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                        </div>
+                        <div class="col p-0">
+                            <img src="https://thumbs.dreamstime.com/b/paris-aerial-view-eiffel-tower-backlight-sun-star-defense-towers-background-paris-aerial-view-eiffel-264909917.jpg"
+                                class="img-fluid img-gallery" alt="Image 2" style="border-radius: 0;">
+                        </div>
+                        <div class="col p-0">
+                            <img src="https://wallpapercave.com/wp/wp5504400.jpg"
+                                class="img-fluid img-gallery" alt="Image 3"
+                                style="border-top-right-radius: 2rem; border-bottom-right-radius: 2rem; border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                        </div>
+                        <div class="col-9 p-0 ms-4 liberty position-relative">
+                            <img src="https://knowinsiders.com/stores/news_dataimages/2022/072022/25/16/4d29d50b3a37e220a9f98241a534d32b.jpg?rt=20220725162700"
+                                alt="" class="img-fluid main-img-gallery" style="border-radius: 2rem;">
+                            <div class="box d-flex justify-content-center align-items-center">
+                                <span>50+</span>&nbsp; <span style="font-weight: 600;font-size: 18px;" >countries</span>
+                            </div>
+                            <div class="big-box big-box-relative">
+                                We are a global company with a presence in over 50 countries. Our mission is to provide
+                                top-notch services and products to our customers worldwide. With dedicated teams in the
+                                UK, Mexico, Brazil, and Spain, we ensure the highest quality and customer satisfaction.
+                                Join us in our journey to excellence and innovation.
+                            </div>
+                            <div class="box2 d-flex justify-content-center position-absolute align-items-center">
+                                UNITED KINGDOM
+                            </div>
+                            <div class="box3 d-flex justify-content-center position-absolute align-items-center">
+                                MEXICO
+                            </div>
+                            <div class="box4 d-flex justify-content-center position-absolute align-items-center">
+                                BRAZIL
+                            </div>
+                            <div class="box5 d-flex justify-content-center position-absolute align-items-center">
+                                SPAIN
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
     </section>
@@ -207,20 +259,59 @@
     <section class="">
         <!-- Footer -->
         <footer class="text-center text-white" style="background-color: #2b0202;">
-            <div class="container p-4 pb-0">
-                <section class="">
-                    <p class="d-flex justify-content-center align-items-center">
-                        <span class="me-3">Register for free</span>
-                        <button data-mdb-ripple-init type="button" class="btn btn-outline-light btn-rounded">
-                            Sign up!
-                        </button>
-                    </p>
+            <div class="container pb-0">
+                <section class="footer-section">
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        Fuel Your Day, Visit Again Soon!!
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <img src="https://static.vecteezy.com/system/resources/previews/013/166/635/original/realistic-coffee-beans-banner-template-design-or-coffee-beans-landing-page-template-design-png.png"
+                            alt="footer-img">
+                    </div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        We Appreciate Your Support!
+                    </div>
                 </section>
             </div>
-
-            <div class="text-center p-3" style="background-color: #171313;">
-                © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <div class="footer-section2 text-center p-3" style="background-color: #171313;">
+                <div class="col-6">
+                    <center>
+                        <div class="navbar-brand">
+                            coffee<span>Voke</span>
+                        </div>
+                        <ul class="d-flex justify-content-between w-50 p-0 pt-3">
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Services</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://cdn-icons-png.flaticon.com/128/15707/15707749.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="">
+                        </div>
+                    </center>
+                </div>
+                <div class="col-6">
+                    <h1 class="footer-contact m-0">Contact Us</h1>
+                    <p class="fs-6 text-start m-0 my-3">Street 238,52 tempor Donec ultricies mattis nulla, suscipit
+                        risus tristique ut.</p>
+                    <table>
+                        <tr>
+                            <td class="label text-start">Phone:</td>
+                            <td class="value text-start">&nbsp;&nbsp;&nbsp;&nbsp;1.777.544.6779</td>
+                        </tr>
+                        <tr>
+                            <td class="label text-start">Email:</td>
+                            <td class="value">&nbsp;&nbsp;&nbsp;&nbsp;support@coffeevoke.com</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Website:</td>
+                            <td class="value text-start">&nbsp;&nbsp;&nbsp;&nbsp;coffeevoke.net</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </footer>
         <!-- Footer -->
